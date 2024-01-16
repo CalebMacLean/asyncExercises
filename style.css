@@ -1,0 +1,114 @@
+/* Common Styles */
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    color: black
+}
+
+section {
+    width: 100vw;
+    height: 100vh;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}
+/* Navbar */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: antiquewhite;
+}
+
+#nav-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 60%;
+    background-color: aliceblue;
+    margin-left: 2rem;  
+    border: 0.5rem solid aqua;
+    border-radius: 1rem;
+}
+
+#nav-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 30%;
+}
+/* Part One Section */
+#one {
+    padding-top: 3rem;
+    padding-left: 2rem;
+}
+
+/* Part Two Section */
+#two {
+    padding: 0.25rem;
+    background-color: green;
+    color: white;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 1fr 0.5fr 0.5fr;
+    grid-template-rows: 0.5fr 0.5fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "nav nav nav nav nav"
+        "ttl ... top ... ..."
+        "... ... mid ... ..."
+        "... ... mid ... ..."
+        "... ... mid ... ...";
+}
+
+#two-title {
+    grid-area: ttl;
+    width: 50%;
+    color: white;
+    text-align: center;
+}
+
+#card-btn {
+    grid-area: top;
+    place-self: center;
+    height: 5rem;
+    width: 10rem;
+    background-color: grey;
+    color: black;
+    font-size: 1.4rem;
+    text-align: center;
+    border: 0.1rem solid lightgray;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: all 30ms;
+}
+#card-btn:active {
+    background-color: darkgrey;
+    color: whitesmoke;
+    border:none;
+}
+
+#cards-container {
+    grid-area: mid;
+    position: relative
+}
+
+.card {
+    position: absolute;
+}

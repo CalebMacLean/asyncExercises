@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Exercises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div id="nav-left" class="center">
+            <h1>JavaScript Promises</h1>
+        </div>
+        <div id="nav-right" class="center">
+            <div class="nav-link"><a href="#one">Numbers</a></div>
+            <div class="nav-link"><a href="#two">Cards</a></div>
+        </div>
+    </nav>
+
+    <section id="one">
+        <h1>Numbers API</h1>
+        <div id="fav-num-container"></div>
+        <hr>
+        <ul id="batch-fact-container"></ul>
+        <hr>
+        <ul id="singular-fact-container"></ul>
+    </section>
+
+    <section id="two">
+        <h1 id="two-title" class="center">Deck of Cards API</h1>
+        <div id="card-btn" class="center noselect">Gimme A Card</div>
+        <div id="cards-container" class="center"></div>
+    </section>
+
+    <!-- JQuery and JavaScript Files -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="part-one.js"></script>
+</body>
+</html>
